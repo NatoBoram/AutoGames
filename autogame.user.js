@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name		AutoGames
-// @namespace	https://github.com/NatoBoram/AutoGames
+// @namespace	https://gitlab.com/nato.boram/AutoGames
 // @version		0.0.3
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
-// @updateURL	https://github.com/NatoBoram/AutoGames/raw/master/autogame.user.js
-// @downloadURL	https://github.com/NatoBoram/AutoGames/raw/master/autogame.user.js
-// @supportURL	https://github.com/NatoBoram/AutoGames/issues
+// @updateURL	https://gitlab.com/nato.boram/AutoGames/raw/master/autogame.user.js
+// @downloadURL	https://gitlab.com/nato.boram/AutoGames/raw/master/autogame.user.js
+// @supportURL	https://gitlab.com/nato.boram/AutoGames/issues
 // @match		http://www.eldarya.com.br/*
 // @match		http://www.eldarya.br/*
 // @match		http://www.eldarya.de/*
