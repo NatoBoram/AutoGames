@@ -5,6 +5,7 @@
 AutoGame is totally invisible, allowing to take screenshots from everywhere on the website without letting enverybody know that you use it. The carousel entry reminds you to run the script once in a while.
 
 ![Menu](/images/menu.png)
+
 ![Banner](/images/banner.png)
 
 ## Features
