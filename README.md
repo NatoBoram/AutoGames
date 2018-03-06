@@ -19,4 +19,4 @@ AutoGame is totally invisible, allowing to take screenshots from everywhere on t
 ## Installation
 
 1. Install [Tampermonkey](https://tampermonkey.net/)
-2. [Click here](https://github.com/NatoBoram/AutoGames/raw/master/autogame.user.js)
+2. [Click here](https://gitlab.com/nato.boram/AutoGames/raw/master/autogame.user.js)
