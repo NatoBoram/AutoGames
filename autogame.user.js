@@ -124,7 +124,7 @@
 	// Header Menu
 	$("#header-menu").prepend(
 		'<li>'+
-		'	<a href="#" onclick="autogames.playall();" style="color:#34386f;">AutoGames</a>'+
+		'	<a onclick="autogames.playall();" style="color:#34386f;">AutoGames</a>'+
 		'</li>'
 	);
 
@@ -137,7 +137,7 @@
 		'		<div class="index-carousel-subtitle"></div>' +
 		'		<div class="index-carousel-description">Mini-games are validated on the client side. Take advantage of it to win some free maanas!</div>' +
 		'		<div class="index-carousel-button">' +
-		'			<a class="button" href="#" onclick="autogames.playall();">Play Games</a>' +
+		'			<a class="button" onclick="autogames.playall();">Play Games</a>' +
 		'		</div>' +
 		'	</div>' +
 		'</div>'
