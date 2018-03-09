@@ -131,7 +131,7 @@
 	// Carousel
 	$(".index-carousel-slider").prepend(
 		'<div class="index-carousel-slide" id="carousel-autogame">' +
-		'	<img class="index-carousel-picture" src="https://github.com/NatoBoram/AutoGames/raw/master/assets/carousel-bienvenue.png" />' +
+		'	<img class="index-carousel-picture" src="https://gitlab.com/nato.boram/AutoGames/raw/master/assets/carousel-bienvenue.png" />' +
 		'	<div class="index-carousel-side">' +
 		'		<div class="index-carousel-title">Auto Games</div>' +
 		'		<div class="index-carousel-subtitle"></div>' +
