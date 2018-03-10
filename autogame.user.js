@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AutoGames
 // @namespace	https://gitlab.com/nato.boram/AutoGames
-// @version		0.0.4
+// @version		0.0.5
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
@@ -43,6 +43,11 @@
 				data: {
 					game: game
 				},
+
+				/**
+				 * Fired when the AJAX POST is successful.
+				 * @param {JSON} json Server's response
+				 */
 				success: function (json) {
 					if (json.result == 'success') {
 
@@ -58,7 +63,6 @@
 						new $.flavrNotif("Played : " + game, {
 							timeout: 1000
 						});
-						setTimeout(refreshPlayerInfo, 1000);
 
 					} else {
 						console.log("ajax_startGame : ", json);
@@ -91,8 +95,8 @@
 		/**
 		 * Found in `emil-e.js`.
 		 * @param {String} enc_token xorEncode
-		 * @param {Number} score
-		 * @param {String} game
+		 * @param {Number} score score
+		 * @param {String} game game
 		 */
 		send: function (enc_token, score, game) {
 			var token = decodeURIComponent(enc_token);
@@ -135,7 +139,7 @@
 		'	<div class="index-carousel-side">' +
 		'		<div class="index-carousel-title">Auto Games</div>' +
 		'		<div class="index-carousel-subtitle"></div>' +
-		'		<div class="index-carousel-description">Mini-games are validated on the client side. Take advantage of it to win some free maanas!</div>' +
+		'		<div class="index-carousel-description">Mini-games are validated on the client side. Take this opportunity to win some free maanas!</div>' +
 		'		<div class="index-carousel-button">' +
 		'			<a class="button" onclick="autogames.playall();">Play Games</a>' +
 		'		</div>' +
