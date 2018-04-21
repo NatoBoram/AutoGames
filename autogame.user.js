@@ -53,11 +53,11 @@
 
 						// Play
 						var gameToken = json.data;
-						console.log("gameToken : ", gameToken);
+						console.log("gameToken :", gameToken);
 						var enc_token = autogames.xorEncode(gameToken, score);
-						console.log("enc_token : ", enc_token);
+						console.log("enc_token :", enc_token);
 						autogames.send(enc_token, score, game);
-						console.log("Played : ", game);
+						console.log("Played :", game);
 
 						// Visual Feedback
 						new $.flavrNotif("Played : " + game, {
@@ -65,7 +65,7 @@
 						});
 
 					} else {
-						console.log("ajax_startGame : ", json);
+						console.log("ajax_startGame :", json);
 					}
 				}
 			});
