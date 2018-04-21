@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AutoGames
 // @namespace	https://gitlab.com/nato.boram/AutoGames
-// @version		0.0.5
+// @version		1.0.0
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
