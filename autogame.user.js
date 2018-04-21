@@ -127,8 +127,8 @@
 
 	// Header Menu
 	$("#header-menu").prepend(
-		'<li>'+
-		'	<a onclick="autogames.playall();" style="color:#34386f;">AutoGames</a>'+
+		'<li>' +
+		'	<a onclick="autogames.playall();" style="color:#34386f;">AutoGames</a>' +
 		'</li>'
 	);
 
