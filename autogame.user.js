@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name		AutoGames
-// @namespace	https://gitlab.com/nato.boram/AutoGames
-// @version		1.0.0
+// @namespace	https://gitlab.com/NatoBoram/AutoGames
+// @version		1.0.1
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
-// @updateURL	https://gitlab.com/nato.boram/AutoGames/raw/master/autogame.user.js
-// @downloadURL	https://gitlab.com/nato.boram/AutoGames/raw/master/autogame.user.js
-// @supportURL	https://gitlab.com/nato.boram/AutoGames/issues
+// @updateURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
+// @downloadURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
+// @supportURL	https://gitlab.com/NatoBoram/AutoGames/issues
 // @match		http://www.eldarya.com.br/*
 // @match		http://www.eldarya.br/*
 // @match		http://www.eldarya.de/*
@@ -135,11 +135,11 @@
 	// Carousel
 	$(".index-carousel-slider").prepend(
 		'<div class="index-carousel-slide" id="carousel-autogame">' +
-		'	<img class="index-carousel-picture" src="https://gitlab.com/nato.boram/AutoGames/raw/master/assets/carousel-bienvenue.png" />' +
+		'	<img class="index-carousel-picture" src="/static/img/newsCarousel/us/carousel-bienvenue.png" />' +
 		'	<div class="index-carousel-side">' +
 		'		<div class="index-carousel-title">Auto Games</div>' +
 		'		<div class="index-carousel-subtitle"></div>' +
-		'		<div class="index-carousel-description">Mini-games are validated on the client side. Take this opportunity to win some free maanas!</div>' +
+		'		<div class="index-carousel-description">Automatically play all your minigames!</div>' +
 		'		<div class="index-carousel-button">' +
 		'			<a class="button" onclick="autogames.playall();">Play Games</a>' +
 		'		</div>' +
