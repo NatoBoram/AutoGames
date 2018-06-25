@@ -10,10 +10,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Changed
 
-* Moved the project to [gitlab.com/NatoBoram/AutoGames](https://gitlab.com/NatoBoram/AutoGames).
-* Now using Eldarya's [`carousel-bienvenue.png`](http://www.eldarya.com/static/img/newsCarousel/us/carousel-bienvenue.png).
-* Changed the description in the carousel.
-
 ### Deprecated
 
 ### Removed
@@ -31,19 +27,3 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 * Changed the description in the carousel.
 
 ## [1.0.0] - 2018-03-06
-
-Initial release
-
-## Template
-
-### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
