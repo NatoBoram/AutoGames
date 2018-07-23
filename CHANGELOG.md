@@ -18,6 +18,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Security
 
+## [1.0.2] - 2018-07-03
+
+### Added
+
+* Support for `eldarya.com` as well as `www.eldarya.com`.
+
 ## [1.0.1] - 2018-06-25
 
 ### Changed
