@@ -1,25 +1,15 @@
 // ==UserScript==
 // @name		AutoGames
 // @namespace	https://gitlab.com/NatoBoram/AutoGames
-// @version		1.0.2
+// @version		1.0.3
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
 // @updateURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
 // @downloadURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
 // @supportURL	https://gitlab.com/NatoBoram/AutoGames/issues
-// @match		http://www.eldarya.com.br/*
-// @match		http://www.eldarya.br/*
-// @match		http://www.eldarya.de/*
-// @match		http://www.eldarya.es/*
-// @match		http://www.eldarya.hu/*
-// @match		http://www.eldarya.it/*
-// @match		http://www.eldarya.pl/*
-// @match		http://www.eldarya.ru/*
-// @match		http://www.eldarya.com/*
-// @match		http://www.eldarya.fr/*
+//
 // @match		http://eldarya.com.br/*
-// @match		http://eldarya.br/*
 // @match		http://eldarya.de/*
 // @match		http://eldarya.es/*
 // @match		http://eldarya.hu/*
@@ -28,6 +18,40 @@
 // @match		http://eldarya.ru/*
 // @match		http://eldarya.com/*
 // @match		http://eldarya.fr/*
+//
+// WWW
+// @match		http://www.eldarya.com.br/*
+// @match		http://www.eldarya.de/*
+// @match		http://www.eldarya.es/*
+// @match		http://www.eldarya.hu/*
+// @match		http://www.eldarya.it/*
+// @match		http://www.eldarya.pl/*
+// @match		http://www.eldarya.ru/*
+// @match		http://www.eldarya.com/*
+// @match		http://www.eldarya.fr/*
+//
+// HTTPS
+// @match		https://eldarya.com.br/*
+// @match		https://eldarya.de/*
+// @match		https://eldarya.es/*
+// @match		https://eldarya.hu/*
+// @match		https://eldarya.it/*
+// @match		https://eldarya.pl/*
+// @match		https://eldarya.ru/*
+// @match		https://eldarya.com/*
+// @match		https://eldarya.fr/*
+//
+// HTTPS WWW
+// @match		https://www.eldarya.com.br/*
+// @match		https://www.eldarya.de/*
+// @match		https://www.eldarya.es/*
+// @match		https://www.eldarya.hu/*
+// @match		https://www.eldarya.it/*
+// @match		https://www.eldarya.pl/*
+// @match		https://www.eldarya.ru/*
+// @match		https://www.eldarya.com/*
+// @match		https://www.eldarya.fr/*
+//
 // @run-at		document-end
 // @grant		none
 // ==/UserScript==
