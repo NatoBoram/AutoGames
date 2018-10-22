@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AutoGames
 // @namespace	https://gitlab.com/NatoBoram/AutoGames
-// @version		1.0.4
+// @version		1.0.5
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
@@ -176,7 +176,7 @@
 		if ($(".index-carousel").length === 1) {
 
 			// Check if the carousel entry is there
-			if ($("#carousel-efd").length === 0) {
+			if ($("#carousel-autogame").length === 0) {
 
 				// Add it!
 				autogames.add_carousel();
