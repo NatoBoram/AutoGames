@@ -20,9 +20,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [1.0.4] - 2018-10-21
 
+### Added
+
+* Now forces HTTPS on all its users
+* Now re-adds the carousel entry every minutes if it's missing
+
 ### Changed
 
 * How have a custom carousel image
+
+### Removed
+
+* HTTP Support
 
 ## [1.0.3] - 2018-10-20
 

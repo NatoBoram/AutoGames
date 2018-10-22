@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AutoGames
 // @namespace	https://gitlab.com/NatoBoram/AutoGames
-// @version		1.0.3
+// @version		1.0.4
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
@@ -137,8 +137,30 @@
 			autogames.play("flappy", 190 + Math.round(Math.random() * 10));
 			autogames.play("hatchlings", 19 + Math.round(Math.random()));
 
-		}
+		},
+
+		/**
+		 * Adds the carousel
+		 */
+		add_carousel: function() {
+			$(".index-carousel-slider").prepend(
+				'<div class="index-carousel-slide" id="carousel-autogame">' +
+				'	<img class="index-carousel-picture" src="https://gitlab.com/NatoBoram/AutoGames/raw/master/assets/carousel-autogames.png" />' +
+				'	<div class="index-carousel-side">' +
+				'		<div class="index-carousel-title">Auto Games</div>' +
+				'		<div class="index-carousel-subtitle"></div>' +
+				'		<div class="index-carousel-description">Automatically play all your minigames!</div>' +
+				'		<div class="index-carousel-button">' +
+				'			<a class="button" onclick="autogames.playall();">Play Games</a>' +
+				'		</div>' +
+				'	</div>' +
+				'</div>'
+			);
+		},
 	};
+
+	// Carousel
+	autogames.add_carousel();
 
 	// Header Menu
 	$("#header-menu").prepend(
@@ -147,19 +169,19 @@
 		'</li>'
 	);
 
-	// Carousel
-	$(".index-carousel-slider").prepend(
-		'<div class="index-carousel-slide" id="carousel-autogame">' +
-		'	<img class="index-carousel-picture" src="https://gitlab.com/NatoBoram/AutoGames/raw/master/assets/carousel-autogames.png" />' +
-		'	<div class="index-carousel-side">' +
-		'		<div class="index-carousel-title">Auto Games</div>' +
-		'		<div class="index-carousel-subtitle"></div>' +
-		'		<div class="index-carousel-description">Automatically play all your minigames!</div>' +
-		'		<div class="index-carousel-button">' +
-		'			<a class="button" onclick="autogames.playall();">Play Games</a>' +
-		'		</div>' +
-		'	</div>' +
-		'</div>'
-	);
+	// Interval
+	setInterval(function() {
+
+		// Check if we're on a page where there's a carousel
+		if ($(".index-carousel").length === 1) {
+
+			// Check if the carousel entry is there
+			if ($("#carousel-efd").length === 0) {
+
+				// Add it!
+				autogames.add_carousel();
+			}
+		}
+	}, 60 * 1000);
 
 })();
