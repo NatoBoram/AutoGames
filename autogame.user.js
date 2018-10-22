@@ -5,30 +5,7 @@
 // @author		Nato Boram
 // @description	Automagically plays Eldarya's minigames for you!
 // @icon		http://www.eldarya.com/static/img/design/menu/minigames.png
-// @updateURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
-// @downloadURL	https://gitlab.com/NatoBoram/AutoGames/raw/master/autogame.user.js
 // @supportURL	https://gitlab.com/NatoBoram/AutoGames/issues
-//
-// @match		http://eldarya.com.br/*
-// @match		http://eldarya.de/*
-// @match		http://eldarya.es/*
-// @match		http://eldarya.hu/*
-// @match		http://eldarya.it/*
-// @match		http://eldarya.pl/*
-// @match		http://eldarya.ru/*
-// @match		http://eldarya.com/*
-// @match		http://eldarya.fr/*
-//
-// WWW
-// @match		http://www.eldarya.com.br/*
-// @match		http://www.eldarya.de/*
-// @match		http://www.eldarya.es/*
-// @match		http://www.eldarya.hu/*
-// @match		http://www.eldarya.it/*
-// @match		http://www.eldarya.pl/*
-// @match		http://www.eldarya.ru/*
-// @match		http://www.eldarya.com/*
-// @match		http://www.eldarya.fr/*
 //
 // HTTPS
 // @match		https://eldarya.com.br/*
@@ -56,8 +33,12 @@
 // @grant		none
 // ==/UserScript==
 
-(function () {
+(function() {
 	'use strict';
+
+	// Force HTTPS
+	if (location.protocol !== "https:")
+		location.protocol = "https:";
 
 	/**
 	 * Play the game automagically!
@@ -69,7 +50,7 @@
 		 * @param {String} name Name of the game
 		 * @returns {String} Token
 		 */
-		play: function (game, score) {
+		play: function(game, score) {
 			$.ajax({
 				url: '/minigames/ajax_startGame',
 				type: 'post',
@@ -82,7 +63,7 @@
 				 * Fired when the AJAX POST is successful.
 				 * @param {JSON} json Server's response
 				 */
-				success: function (json) {
+				success: function(json) {
 					if (json.result == 'success') {
 
 						// Play
@@ -111,7 +92,7 @@
 		 * @param {String} key score
 		 * @returns {String} enc_token
 		 */
-		xorEncode: function (str, key) {
+		xorEncode: function(str, key) {
 			str = str.toString();
 			key = key.toString();
 			var xor = "";
@@ -132,7 +113,7 @@
 		 * @param {Number} score score
 		 * @param {String} game game
 		 */
-		send: function (enc_token, score, game) {
+		send: function(enc_token, score, game) {
 			var token = decodeURIComponent(enc_token);
 			$.ajax({
 				"type": "post",
@@ -142,14 +123,14 @@
 					"score": score,
 					"game": game
 				},
-				"complete": function (data) {}
+				"complete": function(data) {}
 			});
 		},
 
 		/**
 		 * Play everything.
 		 */
-		playall: function () {
+		playall: function() {
 
 			// Play games
 			autogames.play("peggle", 10);
@@ -169,7 +150,7 @@
 	// Carousel
 	$(".index-carousel-slider").prepend(
 		'<div class="index-carousel-slide" id="carousel-autogame">' +
-		'	<img class="index-carousel-picture" src="/static/img/newsCarousel/us/carousel-bienvenue.png" />' +
+		'	<img class="index-carousel-picture" src="https://gitlab.com/NatoBoram/AutoGames/raw/master/assets/carousel-autogames.png" />' +
 		'	<div class="index-carousel-side">' +
 		'		<div class="index-carousel-title">Auto Games</div>' +
 		'		<div class="index-carousel-subtitle"></div>' +
